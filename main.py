@@ -24,7 +24,7 @@ def detect_intent(text):
             return intent
     return "unknown"
 
-# MongoDB Setup (Optional)
+# MongoDB Setup 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 client = MongoClient(MONGO_URI)
 db = client["ai_voice_assistant"]
